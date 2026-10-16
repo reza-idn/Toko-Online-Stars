@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-clean-white: #FFFFFF;
+  --bg-soft-gray: #F9FAFB;
+  --burgundy-start: #800020;
+  --burgundy-end: #4A0014;
+}
+
+body {
+  background-color: #F9FAFB;
+  color: #111827;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.bg-burgundy-grad {
+  background: linear-gradient(135deg, #800020 0%, #4A0014 100%);
+}
+
+.bg-burgundy-grad:hover {
+  background: linear-gradient(135deg, #940025 0%, #5c0019 100%);
+}
+
+.text-burgundy-grad {
+  background: linear-gradient(135deg, #800020 0%, #4A0014 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
